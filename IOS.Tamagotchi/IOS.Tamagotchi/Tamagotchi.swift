@@ -8,22 +8,22 @@
 
 import Foundation
 
-class Tamagotchi {
+struct Tamagotchi {
     
     //Attributes
     
-    private var name:String
+    var name:String
     
-    private var age: Int = 0
-    private var weight:Double = 5
-    private var needAttention:Bool = true
-    private var health:Double = 4
-    private var happinessRank:Int = 3
-    private var happinessLevels:[String] = ["Depressed", "Sad", "Not very happy", "neutral", "quite happy", "happy", "excuberant"]
-    private var hungry:Bool = true
-    private var isMale:Bool
-    private var sick:Bool = false
-    private var living:Bool = true
+    var age: Int = 0
+    var weight:Double = 5
+    var needAttention:Bool = true
+    var health:Double = 4
+    var happinessRank:Int = 3
+    var happinessLevels:[String] = ["Depressed", "Sad", "Not very happy", "ok", "quite happy", "happy", "excuberant"]
+    var hungry:Bool = true
+    var isMale:Bool
+    var sick:Bool = false
+    var living:Bool = true
     
     //Methods
     /* <<constructor>> */ init(name: String, isMale:Bool) {
@@ -32,7 +32,7 @@ class Tamagotchi {
     }
     
     
-    func feedTamagotchi () {
+    /* func feedTamagotchi () {
         if hungry == true {
             hungry = false
         }
@@ -51,7 +51,22 @@ class Tamagotchi {
         hungry = false
         happinessRank += 1
     }
-    
+    */
+    func displayStats() -> String{
+        return """
+        
+        Name: \(name)
+        Age: \(age)
+        health: \(health)
+        Happiness-Level: \(happinessLevels[happinessRank])
+        Is Hungry: \(hungry)
+        
+        
+        
+
+        """
+        
+    }
     
     
     func getAge () -> Int{

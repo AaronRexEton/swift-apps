@@ -8,13 +8,25 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
+    
+    var Mytamagotchi = Tamagotchi(name: "Bill", isMale: true)
+    
+    @IBOutlet var tamagotchiStats: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tamagotchiStats.text = Mytamagotchi.displayStats()
+
     }
 
-
+    
+    
+    
 }
+
 
