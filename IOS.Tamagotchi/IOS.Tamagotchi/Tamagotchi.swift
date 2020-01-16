@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Tamagotchi {
+class Tamagotchi {
     
     //Attributes
     
@@ -32,26 +32,33 @@ struct Tamagotchi {
     }
     
     
-    /* func feedTamagotchi () {
-        if hungry == true {
-            hungry = false
-        }
-        else {
-            print("Not hungry")
-        }
-    }
+    
     
     func playGame() {
-        needAttention = false
-        happinessRank += 1
+        self.needAttention = false
+        
+        if happinessRank != 6 {
+            self.happinessRank += 1
+        }
     }
     
     func eat() {
-        weight += 1
-        hungry = false
-        happinessRank += 1
+        self.weight += 0.5
+        self.hungry = false
+        if happinessRank != 6 {
+            self.happinessRank += 1
+        }
+        
     }
-    */
+    
+    func excercise() {
+        self.weight -= 0.5
+        self.hungry = false
+        if happinessRank != 6 {
+            self.happinessRank += 1
+        }
+    }
+    
     func displayStats() -> String{
         return """
         
@@ -60,6 +67,7 @@ struct Tamagotchi {
         health: \(health)
         Happiness-Level: \(happinessLevels[happinessRank])
         Is Hungry: \(hungry)
+        Weight: \(weight)
         
         
         
