@@ -63,13 +63,16 @@ class ViewController: UIViewController {
         }
         else if tamagotchi.needAttention == false {
             tamagotchiSpeech.text = "I don't want to play"
+            tamagotchi.happinessRank -= 1
+            tamagotchiStats.text = tamagotchi.displayStats()
             
         }
     }
     @IBAction func exerciseTamagotchi(_ sender: Any) {
         tamagotchi.excercise()
-        tamagotchiStats.text = tamagotchi.displayStats()
         tamagotchiSpeech.text = "I'm exhausted"
+        tamagotchi.happinessRank -= 1
+        tamagotchiStats.text = tamagotchi.displayStats()
 
         
     }
@@ -81,6 +84,8 @@ class ViewController: UIViewController {
         }
         else {
             tamagotchiSpeech.text = "I don't want to eat the medicine!"
+            tamagotchi.happinessRank -= 1
+            tamagotchiStats.text = tamagotchi.displayStats()
         }
     
     }
@@ -90,6 +95,11 @@ class ViewController: UIViewController {
             tamagotchi.cleanTama()
             tamagotchiStats.text = tamagotchi.displayStats()
             tamagotchiSpeech.text = "I feel refreshed"
+        } else if tamagotchi.clean == true {
+            tamagotchiSpeech.text = "I don't want to have a bath!"
+            tamagotchi.happinessRank -= 1
+            tamagotchiStats.text = tamagotchi.displayStats()
+            
         }
     
     }
@@ -114,7 +124,7 @@ class ViewController: UIViewController {
                 
             }
             else if tamagotchi.randomEvent > 30 {
-                tamagotchiSpeech.text = "I'm hungrt"
+                tamagotchiSpeech.text = "I'm hungry"
                 tamagotchi.clean = false
                 
             }
