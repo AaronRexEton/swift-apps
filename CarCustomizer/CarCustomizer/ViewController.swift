@@ -74,7 +74,7 @@ class ViewController: UIViewController {
                 if name == "UltraSpeedSwitch" {
                     return false
                 } else {
-                    return false
+                    return true
                 }
                 
             } else if remainingFunds >= 500 {
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
     
     }
     
-
+/*
     func checkFunds() {
         if remainingFunds < 500 {
             engineAndExhaustPackage.isEnabled = false
@@ -136,11 +136,11 @@ class ViewController: UIViewController {
         
     }
     
-    
+    */
 
     @IBAction func engineAndExhaustToggle(_ sender: Any) {
         let price = 500
-        checkFunds()
+       
          /*if remainingFunds < price {
             engineAndExhaustPackage.isEnabled = false
         }*/
@@ -160,7 +160,6 @@ class ViewController: UIViewController {
     @IBAction func tiresPackageToggle(_ sender: Any) {
         
         let price = 500
-        checkFunds()
         /*if remainingFunds < price {
             tiresPackage.isEnabled = false
         
@@ -181,7 +180,7 @@ class ViewController: UIViewController {
     
     @IBAction func turboBoostPackageToggle(_ sender: Any) {
         let price = 1000
-        checkFunds()
+    
          /*if remainingFunds < price {
             turboBoostPackage.isEnabled = false
         } else {
@@ -200,7 +199,7 @@ class ViewController: UIViewController {
     
     @IBAction func ultraSpeedPackageToggle(_ sender: Any) {
         let price = 1500
-        checkFunds()
+    
         
         /* if remainingFunds <= 0 {
     

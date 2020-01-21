@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,100 +15,114 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selected Car Statistics" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO2-51-Rrn">
-                                <rect key="frame" x="20" y="69" width="374" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-mV-ioo">
-                                <rect key="frame" x="20" y="303" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsP-mV-ioo">
+                                <rect key="frame" x="120.33333333333331" y="152.33333333333334" width="60" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="NextCar"/>
                                 <state key="normal" title="Next Car"/>
                                 <connections>
                                     <action selector="nextCar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7YO-TU-egr"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-sn-uc2">
-                                <rect key="frame" x="327" y="371" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="EngineAndExhaustSwitch"/>
-                                <connections>
-                                    <action selector="engineAndExhaustToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pia-pI-Dpp"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1q3-HQ-lsg">
-                                <rect key="frame" x="327" y="426" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="TiresSwitch"/>
-                                <connections>
-                                    <action selector="tiresPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="XRI-lm-u4i"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tires Package (Cost: 500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77V-3x-6vl">
-                                <rect key="frame" x="20" y="431" width="200" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Car Statistics" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uO2-51-Rrn">
+                                <rect key="frame" x="120.33333333333333" y="106" width="173.66666666666669" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Engine &amp; Exhaust Package (Cost: 500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-Tl-uBq">
-                                <rect key="frame" x="20" y="376" width="295" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remaining Funds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmv-jl-c6a">
-                                <rect key="frame" x="152" y="40" width="242" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="remainingFunds"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turbo Boost (Cost: 1000)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg7-Nl-bDx">
-                                <rect key="frame" x="20" y="489" width="193" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ultra Speed (Cost: 1500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmx-ct-J7s">
-                                <rect key="frame" x="20" y="548" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uuV-ck-nya">
-                                <rect key="frame" x="327" y="484" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="TurboBoostSwitch"/>
-                                <connections>
-                                    <action selector="turboBoostPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="kGB-I4-3UZ"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-Gw-904">
-                                <rect key="frame" x="327" y="543" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="UltraSpeedSwitch"/>
-                                <connections>
-                                    <action selector="ultraSpeedPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="mYq-Hr-6Hk"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkf-tV-jv8">
-                                <rect key="frame" x="29" y="63" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkf-tV-jv8">
+                                <rect key="frame" x="20" y="40" width="44" height="21"/>
                                 <accessibility key="accessibilityConfiguration" label="Timer"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Remaining Funds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmv-jl-c6a">
+                                <rect key="frame" x="172" y="17" width="195" height="66"/>
+                                <accessibility key="accessibilityConfiguration" identifier="remainingFunds"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-sn-uc2">
+                                <rect key="frame" x="327" y="192.33333333333334" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="EngineAndExhaustSwitch"/>
+                                <connections>
+                                    <action selector="engineAndExhaustToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pia-pI-Dpp"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1q3-HQ-lsg">
+                                <rect key="frame" x="320" y="233.33333333333334" width="51" height="31.000000000000028"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TiresSwitch"/>
+                                <connections>
+                                    <action selector="tiresPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="XRI-lm-u4i"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tires Package (Cost: 500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77V-3x-6vl">
+                                <rect key="frame" x="20" y="233.33333333333334" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engine &amp; Exhaust Package (Cost: 500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwS-Tl-uBq">
+                                <rect key="frame" x="20" y="192.33333333333334" width="295" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Ultra Speed (Cost: 1500)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmx-ct-J7s">
+                                <rect key="frame" x="20" y="299" width="191" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uuV-ck-nya">
+                                <rect key="frame" x="326" y="274.33333333333331" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TurboBoostSwitch"/>
+                                <connections>
+                                    <action selector="turboBoostPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="kGB-I4-3UZ"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oI4-Gw-904">
+                                <rect key="frame" x="326" y="315.33333333333331" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" identifier="UltraSpeedSwitch"/>
+                                <connections>
+                                    <action selector="ultraSpeedPackageToggle:" destination="BYZ-38-t0r" eventType="valueChanged" id="mYq-Hr-6Hk"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Turbo Boost (Cost: 1000)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg7-Nl-bDx">
+                                <rect key="frame" x="20" y="274.33333333333331" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="77V-3x-6vl" firstAttribute="top" secondItem="iwS-Tl-uBq" secondAttribute="bottom" constant="20" id="0Rl-y9-O3V"/>
+                            <constraint firstItem="77V-3x-6vl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0pj-3R-TqR"/>
+                            <constraint firstItem="NsP-mV-ioo" firstAttribute="top" secondItem="uO2-51-Rrn" secondAttribute="baseline" constant="30" id="3jt-8B-U3q"/>
+                            <constraint firstItem="mkf-tV-jv8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="54P-av-3a5"/>
+                            <constraint firstItem="NsP-mV-ioo" firstAttribute="leading" secondItem="uO2-51-Rrn" secondAttribute="leading" id="D09-9i-7Mf"/>
+                            <constraint firstItem="uO2-51-Rrn" firstAttribute="top" secondItem="mkf-tV-jv8" secondAttribute="bottom" constant="45" id="D1K-db-yi4"/>
+                            <constraint firstItem="1q3-HQ-lsg" firstAttribute="top" secondItem="iwS-Tl-uBq" secondAttribute="bottom" constant="20" id="DJq-IC-1K3"/>
+                            <constraint firstItem="oI4-Gw-904" firstAttribute="top" secondItem="uuV-ck-nya" secondAttribute="bottom" constant="10" id="F2B-Za-b2m"/>
+                            <constraint firstItem="uuV-ck-nya" firstAttribute="top" secondItem="1q3-HQ-lsg" secondAttribute="bottom" constant="10" id="GBN-Wm-kxu"/>
+                            <constraint firstItem="rmx-ct-J7s" firstAttribute="top" secondItem="gg7-Nl-bDx" secondAttribute="bottom" constant="20" id="Gob-fZ-wiW"/>
+                            <constraint firstItem="gg7-Nl-bDx" firstAttribute="top" secondItem="77V-3x-6vl" secondAttribute="bottom" constant="20" id="Gwu-6C-WlL"/>
+                            <constraint firstItem="1q3-HQ-lsg" firstAttribute="leading" secondItem="77V-3x-6vl" secondAttribute="trailing" constant="100" id="LrC-mD-KZJ"/>
+                            <constraint firstItem="iwS-Tl-uBq" firstAttribute="top" secondItem="NsP-mV-ioo" secondAttribute="bottom" constant="10" id="MkW-me-GdX"/>
+                            <constraint firstItem="uO2-51-Rrn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ULN-Fb-KEv"/>
+                            <constraint firstItem="mkf-tV-jv8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="a07-nP-dIb"/>
+                            <constraint firstItem="rmx-ct-J7s" firstAttribute="firstBaseline" secondItem="gg7-Nl-bDx" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="cVg-z5-Tg3"/>
+                            <constraint firstItem="iwS-Tl-uBq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cbS-KI-Wxi"/>
+                            <constraint firstItem="uuV-ck-nya" firstAttribute="leading" secondItem="gg7-Nl-bDx" secondAttribute="trailing" constant="100" id="dic-q9-1Ae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zmv-jl-c6a" secondAttribute="trailing" constant="47" id="dqk-Ws-WQl"/>
+                            <constraint firstItem="oI4-Gw-904" firstAttribute="leading" secondItem="rmx-ct-J7s" secondAttribute="trailing" constant="100" id="gVq-p6-zxG"/>
+                            <constraint firstItem="uO2-51-Rrn" firstAttribute="top" secondItem="mkf-tV-jv8" secondAttribute="bottom" constant="22" id="gW8-xq-UFN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mkf-tV-jv8" secondAttribute="trailing" constant="341" id="mvj-dP-xfl"/>
+                            <constraint firstItem="mkf-tV-jv8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="npq-Zd-lJI"/>
+                            <constraint firstItem="FkQ-sn-uc2" firstAttribute="top" secondItem="NsP-mV-ioo" secondAttribute="bottom" constant="10" id="sPg-iP-sXY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
