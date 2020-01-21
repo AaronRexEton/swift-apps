@@ -95,9 +95,33 @@ class ViewController: UIViewController {
             tamagotchiStats.text = tamagotchi.displayStats()
             
             tamagotchi.randomEvent = Int.random(in: 0...100)
-            if tamagotch.randomEvent > 90 {
+            if tamagotchi.randomEvent > 50 {
+                tamagotchiSpeech.text = "I feel sick"
+                tamagotchi.sick = true
+                tamagotchi.needAttention = false
+                tamagotchiStats.text = tamagotchi.displayStats()
+            }
+            else if tamagotchi.randomEvent > 40 {
+                tamagotchiSpeech.text = "Play with me!"
+                tamagotchi.needAttentione = false
                 
             }
+            else if tamagotchi.randomEvent > 30 {
+                tamagotchiSpeech.text = "I'm hungrt"
+                tamagotchi.clean = false
+                
+            }
+            else if tamagotchi.randomEvent > 20 {
+                tamagotchiSpeech.text = "I'm dirty"
+                tamagotchi.clean = false
+                
+            }
+            else if tamagotchi.randomEvent > 0 {
+                tamagotchiSpeech.text = "I'm dirty"
+                tamagotchi.clean = false
+                
+            }
+            
             
             
         }
