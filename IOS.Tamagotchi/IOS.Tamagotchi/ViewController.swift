@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     var lifeCount = 0
     
     
+    @IBOutlet var GifView: UIImageView!
     
     @IBOutlet var tamagotchiSpeech: UILabel!
     @IBOutlet var TimerDisplay: UILabel!
@@ -35,15 +36,21 @@ class ViewController: UIViewController {
         
         tamagotchiStats.text = tamagotchi.displayStats()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(lifeTime), userInfo: nil, repeats: true)
-        
+        GifView.loadGif(name: "TamAnimation")
 
     }
 
     
     @IBAction func feedTamagotchi(_ sender: Any) {
-        tamagotchi.eat()
-        tamagotchiStats.text = tamagotchi.displayStats()
-        tamagotchiSpeech.text = "YumYum"
+        if tamagotchi.hungry == true {
+            tamagotchi.eat()
+            tamagotchiStats.text = tamagotchi.displayStats()
+            tamagotchiSpeech.text = "YumYum"
+        } else if tamagotchi.hungry == false {
+            tamagotchiSpeech.text = "I'm not hungry"
+            tamagotchi.happinessRank -= 1
+            tamagotchiStats.text = tamagotchi.displayStats()
+        }
                 
     }
     
@@ -103,7 +110,7 @@ class ViewController: UIViewController {
             }
             else if tamagotchi.randomEvent > 40 {
                 tamagotchiSpeech.text = "Play with me!"
-                tamagotchi.needAttentione = false
+                tamagotchi.needAttention = false
                 
             }
             else if tamagotchi.randomEvent > 30 {

@@ -17,6 +17,8 @@
 		421970CF23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970CE23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift */; };
 		421970DD23CDD11F00AD6317 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970DC23CDD11F00AD6317 /* Tamagotchi.swift */; };
 		421970DE23CDD12F00AD6317 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970DC23CDD11F00AD6317 /* Tamagotchi.swift */; };
+		93AF378C23D75CB500366B60 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF378B23D75CB500366B60 /* Swift+Gif.swift */; };
+		93AF378E23D75EE600366B60 /* TamAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93AF378D23D75EE600366B60 /* TamAnimation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		421970CE23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_TamagotchiUITests.swift; sourceTree = "<group>"; };
 		421970D023CDD0EF00AD6317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421970DC23CDD11F00AD6317 /* Tamagotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi.swift; sourceTree = "<group>"; };
+		93AF378B23D75CB500366B60 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
+		93AF378D23D75EE600366B60 /* TamAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TamAnimation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				421970AC23CDD0ED00AD6317 /* AppDelegate.swift */,
+				93AF378D23D75EE600366B60 /* TamAnimation.gif */,
 				421970AE23CDD0ED00AD6317 /* SceneDelegate.swift */,
 				421970B023CDD0ED00AD6317 /* ViewController.swift */,
 				421970B223CDD0ED00AD6317 /* Main.storyboard */,
@@ -110,6 +115,7 @@
 				421970B723CDD0EE00AD6317 /* LaunchScreen.storyboard */,
 				421970BA23CDD0EE00AD6317 /* Info.plist */,
 				421970DC23CDD11F00AD6317 /* Tamagotchi.swift */,
+				93AF378B23D75CB500366B60 /* Swift+Gif.swift */,
 			);
 			path = IOS.Tamagotchi;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			files = (
 				421970B923CDD0EE00AD6317 /* LaunchScreen.storyboard in Resources */,
 				421970B623CDD0EE00AD6317 /* Assets.xcassets in Resources */,
+				93AF378E23D75EE600366B60 /* TamAnimation.gif in Resources */,
 				421970B423CDD0ED00AD6317 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +274,7 @@
 				421970B123CDD0ED00AD6317 /* ViewController.swift in Sources */,
 				421970AD23CDD0ED00AD6317 /* AppDelegate.swift in Sources */,
 				421970AF23CDD0ED00AD6317 /* SceneDelegate.swift in Sources */,
+				93AF378C23D75CB500366B60 /* Swift+Gif.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
