@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     
     
+    @IBOutlet var tamagotchiSpeech: UILabel!
     @IBOutlet var TimerDisplay: UILabel!
     @IBOutlet var playGameButton: UIButton!
     @IBOutlet var feedButton: UIButton!
@@ -42,32 +43,65 @@ class ViewController: UIViewController {
     @IBAction func feedTamagotchi(_ sender: Any) {
         tamagotchi.eat()
         tamagotchiStats.text = tamagotchi.displayStats()
+        tamagotchiSpeech.text = "YumYum"
                 
     }
     
     @IBAction func playGameTamagotchi(_ sender: Any) {
-        tamagotchi.playGame()
-        tamagotchiStats.text = tamagotchi.displayStats()
-        
+        if tamagotchi.needAttention == true {
+            tamagotchi.playGame()
+            tamagotchiStats.text = tamagotchi.displayStats()
+            tamagotchiSpeech.text = "That was so much fun"
+            tamagotchi.needAttention = false
+        }
+        else if tamagotchi.needAttention == false {
+            tamagotchiSpeech.text = "I don't want to play"
+            
+        }
     }
     @IBAction func exerciseTamagotchi(_ sender: Any) {
         tamagotchi.excercise()
         tamagotchiStats.text = tamagotchi.displayStats()
+        tamagotchiSpeech.text = "I'm exhausted"
 
         
     }
     @IBAction func medicineTamagotchi(_ sender: Any) {
+        if tamagotchi.sick == true {
+            tamagotchi.medicate()
+            tamagotchiStats.text = tamagotchi.displayStats()
+            tamagotchiSpeech.text = "Thanks I feel better"
+        }
+        else {
+            tamagotchiSpeech.text = "I don't want to eat the medicine!"
+        }
     
     }
     
     @IBAction func cleanTamagotchi(_ sender: Any) {
+        if tamagotchi.clean == false {
+            tamagotchi.cleanTama()
+            tamagotchiStats.text = tamagotchi.displayStats()
+            tamagotchiSpeech.text = "I feel refreshed"
+        }
     
     }
     
     @objc func lifeTime() {
         lifeCount += 1
         TimerDisplay.text = "\(lifeCount)"
-        
+        if lifeCount % 10 == 0 {
+            tamagotchi.sick = true
+            tamagotchiStats.text = tamagotchi.displayStats()
+            
+            tamagotchi.randomEvent = Int.random(in: 0...100)
+            if tamagotch.randomEvent > 90 {
+                
+            }
+            
+            
+        }
+
         
     }
 }

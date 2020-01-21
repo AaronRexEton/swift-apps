@@ -18,12 +18,14 @@ class Tamagotchi {
     var weight:Double = 5
     var needAttention:Bool = true
     var health:Double = 4
+    var clean:Bool = true
     var happinessRank:Int = 3
     var happinessLevels:[String] = ["Depressed", "Sad", "Not very happy", "ok", "quite happy", "happy", "excuberant"]
     var hungry:Bool = true
     var isMale:Bool
-    var sick:Bool = false
+    var sick:Bool = true
     var living:Bool = true
+    var randomEvent: Int = -1
     
     //Methods
     /* <<constructor>> */ init(name: String, isMale:Bool) {
@@ -59,14 +61,35 @@ class Tamagotchi {
         }
     }
     
+    func medicate() {
+    
+        self.sick = false
+        if happinessRank != 6 {
+            self.happinessRank += 1
+        }
+
+    }
+    
+    func cleanTama() {
+        self.clean = false
+               if happinessRank != 6 {
+                   self.happinessRank += 1
+               }
+        
+  
+    }
+    
     func displayStats() -> String{
         return """
         
         Name: \(name)
         Age: \(age)
         health: \(health)
+        Needs Attention: \(needAttention)
         Happiness-Level: \(happinessLevels[happinessRank])
         Is Hungry: \(hungry)
+        Needs cleaning: \(clean)
+        Is sick: \(sick)
         Weight: \(weight)
         
         
