@@ -14,7 +14,7 @@ class Tamagotchi {
     
     var name:String
     
-    var age: Int = 0
+    var age: Int = 1
     var weight:Double = 5
     var needAttention:Bool = true
     var health:Double = 4

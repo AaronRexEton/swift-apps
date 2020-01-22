@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     
     
-    let tamagotchi = Tamagotchi(name: "Bill", isMale: true)
+    let tamagotchi = Tamagotchi(name: "Lukas", isMale: true)
     var timer: Timer?
     var lifeCount = 0
     
@@ -91,11 +91,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func cleanTamagotchi(_ sender: Any) {
-        if tamagotchi.clean == false {
+        if tamagotchi.clean == true {
             tamagotchi.cleanTama()
             tamagotchiStats.text = tamagotchi.displayStats()
             tamagotchiSpeech.text = "I feel refreshed"
-        } else if tamagotchi.clean == true {
+        } else if tamagotchi.clean == false {
             tamagotchiSpeech.text = "I don't want to have a bath!"
             tamagotchi.happinessRank -= 1
             tamagotchiStats.text = tamagotchi.displayStats()
@@ -107,37 +107,33 @@ class ViewController: UIViewController {
     @objc func lifeTime() {
         lifeCount += 1
         TimerDisplay.text = "\(lifeCount)"
-        if lifeCount % 10 == 0 {
+        if lifeCount % 3 == 0 {
             tamagotchi.sick = true
             tamagotchiStats.text = tamagotchi.displayStats()
             
             tamagotchi.randomEvent = Int.random(in: 0...100)
-            if tamagotchi.randomEvent > 50 {
+            if tamagotchi.randomEvent > 90 {
                 tamagotchiSpeech.text = "I feel sick"
                 tamagotchi.sick = true
                 tamagotchi.needAttention = false
                 tamagotchiStats.text = tamagotchi.displayStats()
             }
-            else if tamagotchi.randomEvent > 40 {
+            else if tamagotchi.randomEvent > 60 {
                 tamagotchiSpeech.text = "Play with me!"
-                tamagotchi.needAttention = false
-                
-            }
-            else if tamagotchi.randomEvent > 30 {
-                tamagotchiSpeech.text = "I'm hungry"
-                tamagotchi.clean = false
+                tamagotchi.needAttention = true
                 
             }
             else if tamagotchi.randomEvent > 20 {
-                tamagotchiSpeech.text = "I'm dirty"
-                tamagotchi.clean = false
+                tamagotchiSpeech.text = "I'm hungry"
+                tamagotchi.hungry = true
                 
             }
             else if tamagotchi.randomEvent > 0 {
                 tamagotchiSpeech.text = "I'm dirty"
-                tamagotchi.clean = false
+                tamagotchi.clean = true
                 
             }
+           
             
             
             
