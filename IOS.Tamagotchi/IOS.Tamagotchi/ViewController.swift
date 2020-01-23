@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         
         tamagotchiStats.text = tamagotchi.displayStats()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(lifeTime), userInfo: nil, repeats: true)
-        GifView.loadGif(name: "TamAnimation")
+        GifView.loadGif(name: "TamPreEvolution")
 
     }
 
