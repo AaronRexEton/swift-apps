@@ -25,9 +25,15 @@ class ViewController: UIViewController {
     @IBOutlet var TimerDisplay: UILabel!
     @IBOutlet var playGameButton: UIButton!
     @IBOutlet var feedButton: UIButton!
+    var youDied = #imageLiteral(resourceName: "You_died.png")
     
+    @IBOutlet var cleanButton: UIButton!
+    @IBOutlet var medicineButton: UIButton!
     @IBOutlet var excerciseButton: UIButton!
+    
     @IBOutlet var tamagotchiStats: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +43,36 @@ class ViewController: UIViewController {
         tamagotchiStats.text = tamagotchi.displayStats()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(lifeTime), userInfo: nil, repeats: true)
         GifView.loadGif(name: "TamPreEvolution")
+        
+     
+    
+        
 
+    }
+    
+    func isDead() {
+         
+         if tamagotchi.happinessLevels[tamagotchi.happinessRank] == "depression" {
+         }
+     
+    }
+    
+    func death() {
+        timer?.invalidate()
+        TimerDisplay.text = " "
+        tamagotchiStats.text = " "
+        GifView.image = youDied
+        feedButton.isEnabled = false
+        playGameButton.isEnabled = false
+        excerciseButton.isEnabled = false
+        medicineButton.isEnabled = false
+        cleanButton.isEnabled = false
+       
+        
+        
+        
+        
+        
     }
 
     
@@ -46,10 +81,20 @@ class ViewController: UIViewController {
             tamagotchi.eat()
             tamagotchiStats.text = tamagotchi.displayStats()
             tamagotchiSpeech.text = "YumYum"
+            if tamagotchi.weight >= 10 {
+                tamagotchiSpeech.text = "Your tamagotchi died of obesity"
+                death()
+            }
         } else if tamagotchi.hungry == false {
             tamagotchiSpeech.text = "I'm not hungry"
-            tamagotchi.happinessRank -= 1
-            tamagotchiStats.text = tamagotchi.displayStats()
+            if tamagotchi.happinessRank != 0 {
+                tamagotchi.happinessRank -= 1
+                tamagotchiStats.text = tamagotchi.displayStats()
+            }
+            else {
+                death()
+            }
+            
         }
                 
     }
@@ -63,16 +108,29 @@ class ViewController: UIViewController {
         }
         else if tamagotchi.needAttention == false {
             tamagotchiSpeech.text = "I don't want to play"
-            tamagotchi.happinessRank -= 1
-            tamagotchiStats.text = tamagotchi.displayStats()
+            if tamagotchi.happinessRank != 0 {
+                tamagotchi.happinessRank -= 1
+                tamagotchiStats.text = tamagotchi.displayStats()
+            }
+            else {
+                tamagotchiSpeech.text = "Your tamagotchi died of sadness"
+                death()
+            }
             
         }
     }
     @IBAction func exerciseTamagotchi(_ sender: Any) {
         tamagotchi.excercise()
         tamagotchiSpeech.text = "I'm exhausted"
-        tamagotchi.happinessRank -= 1
-        tamagotchiStats.text = tamagotchi.displayStats()
+        if tamagotchi.happinessRank != 0 {
+            tamagotchi.happinessRank -= 1
+            tamagotchiStats.text = tamagotchi.displayStats()
+        }
+        else {
+            tamagotchiSpeech.text = "Your tamagotchi died of sadness"
+            death()
+        }
+    
 
         
     }
@@ -84,8 +142,15 @@ class ViewController: UIViewController {
         }
         else {
             tamagotchiSpeech.text = "I don't want to eat the medicine!"
-            tamagotchi.happinessRank -= 1
-            tamagotchiStats.text = tamagotchi.displayStats()
+            if tamagotchi.happinessRank != 0 {
+                tamagotchi.happinessRank -= 1
+                tamagotchiStats.text = tamagotchi.displayStats()
+            }
+            else {
+                tamagotchiSpeech.text = "Your tamagotchi died of sadness"
+                death()
+            }
+            
         }
     
     }
@@ -97,8 +162,15 @@ class ViewController: UIViewController {
             tamagotchiSpeech.text = "I feel refreshed"
         } else if tamagotchi.clean == false {
             tamagotchiSpeech.text = "I don't want to have a bath!"
-            tamagotchi.happinessRank -= 1
-            tamagotchiStats.text = tamagotchi.displayStats()
+            if tamagotchi.happinessRank != 0 {
+                tamagotchi.happinessRank -= 1
+                tamagotchiStats.text = tamagotchi.displayStats()
+            }
+            else {
+                tamagotchiSpeech.text = "Your tamagotchi died of sadness"
+                death()
+            }
+            
             
         }
     
@@ -107,12 +179,18 @@ class ViewController: UIViewController {
     @objc func lifeTime() {
         lifeCount += 1
         TimerDisplay.text = "\(lifeCount)"
+    
         if lifeCount % 3 == 0 {
-            tamagotchi.sick = true
             tamagotchiStats.text = tamagotchi.displayStats()
             
             tamagotchi.randomEvent = Int.random(in: 0...100)
-            if tamagotchi.randomEvent > 90 {
+            
+            if tamagotchi.randomEvent > 95 && tamagotchi.happinessRank == 6{
+                tamagotchiSpeech.text = "evolution!"
+                GifView.loadGif(name: "TamAnimation")
+            }
+            
+            else if tamagotchi.randomEvent > 90 {
                 tamagotchiSpeech.text = "I feel sick"
                 tamagotchi.sick = true
                 tamagotchi.needAttention = false
@@ -133,10 +211,21 @@ class ViewController: UIViewController {
                 tamagotchi.clean = true
                 
             }
+            
            
-            
-            
-            
+        }
+
+        else if lifeCount % 11 == 0 && tamagotchi.sick == true {
+            tamagotchiSpeech.text = "Your tamagotchi died of disease"
+            death()
+        }
+        else if lifeCount % 11 == 0 && tamagotchi.needAttention == true {
+            tamagotchiSpeech.text = "Your tamagotchi died of neglect"
+            death()
+        }
+        else if lifeCount % 11 == 0 && tamagotchi.hungry == true {
+            tamagotchiSpeech.text = "Your tamagotchi died of starvation"
+            death()
         }
 
         

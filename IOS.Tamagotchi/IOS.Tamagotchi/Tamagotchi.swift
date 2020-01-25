@@ -23,7 +23,7 @@ class Tamagotchi {
     var happinessLevels:[String] = ["Depressed", "Sad", "Not very happy", "ok", "quite happy", "happy", "excuberant"]
     var hungry:Bool = true
     var isMale:Bool
-    var sick:Bool = true
+    var sick:Bool = false
     var living:Bool = true
     var randomEvent: Int = -1
     
@@ -45,7 +45,7 @@ class Tamagotchi {
     }
     
     func eat() {
-        self.weight += 0.5
+        self.weight += 1
         self.hungry = false
         if happinessRank != 6 {
             self.happinessRank += 1
@@ -54,7 +54,7 @@ class Tamagotchi {
     }
     
     func excercise() {
-        self.weight -= 0.5
+        self.weight -= 1
         self.hungry = false
         if happinessRank != 6 {
             self.happinessRank += 1
@@ -78,6 +78,8 @@ class Tamagotchi {
         
   
     }
+    
+ 
     
     func displayStats() -> String{
         return """

@@ -112,8 +112,10 @@
                     <connections>
                         <outlet property="GifView" destination="XJh-Cz-Pj5" id="Rg9-Iu-WPt"/>
                         <outlet property="TimerDisplay" destination="aDO-4H-wlN" id="AmC-mf-V3Z"/>
+                        <outlet property="cleanButton" destination="zMg-9r-7oD" id="sON-If-Qab"/>
                         <outlet property="excerciseButton" destination="GMs-XF-cTI" id="lA0-6A-eci"/>
                         <outlet property="feedButton" destination="K1d-ev-bH5" id="ULv-uO-FAF"/>
+                        <outlet property="medicineButton" destination="Ovb-NG-kuG" id="qz4-v3-J59"/>
                         <outlet property="playGameButton" destination="7dM-OK-xkm" id="tKi-Jp-0p3"/>
                         <outlet property="tamagotchiSpeech" destination="A1x-iq-ndr" id="d4q-RD-Cm9"/>
                         <outlet property="tamagotchiStats" destination="DS1-XH-RK6" id="bDU-EC-6IB"/>
