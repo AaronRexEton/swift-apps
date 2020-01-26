@@ -10,13 +10,23 @@
 		421970AD23CDD0ED00AD6317 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970AC23CDD0ED00AD6317 /* AppDelegate.swift */; };
 		421970AF23CDD0ED00AD6317 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970AE23CDD0ED00AD6317 /* SceneDelegate.swift */; };
 		421970B123CDD0ED00AD6317 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970B023CDD0ED00AD6317 /* ViewController.swift */; };
-		421970B423CDD0ED00AD6317 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421970B223CDD0ED00AD6317 /* Main.storyboard */; };
 		421970B623CDD0EE00AD6317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421970B523CDD0EE00AD6317 /* Assets.xcassets */; };
 		421970B923CDD0EE00AD6317 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421970B723CDD0EE00AD6317 /* LaunchScreen.storyboard */; };
 		421970C423CDD0EE00AD6317 /* IOS_TamagotchiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970C323CDD0EE00AD6317 /* IOS_TamagotchiTests.swift */; };
 		421970CF23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970CE23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift */; };
 		421970DD23CDD11F00AD6317 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970DC23CDD11F00AD6317 /* Tamagotchi.swift */; };
 		421970DE23CDD12F00AD6317 /* Tamagotchi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421970DC23CDD11F00AD6317 /* Tamagotchi.swift */; };
+		93908CD823DCC67100C2CF92 /* content.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CCF23DCC67100C2CF92 /* content.png */; };
+		93908CD923DCC67100C2CF92 /* iPhone 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD023DCC67100C2CF92 /* iPhone 8.png */; };
+		93908CDA23DCC67100C2CF92 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD123DCC67100C2CF92 /* comment.png */; };
+		93908CDB23DCC67100C2CF92 /* b5.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD223DCC67100C2CF92 /* b5.png */; };
+		93908CDC23DCC67100C2CF92 /* b4.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD323DCC67100C2CF92 /* b4.png */; };
+		93908CDD23DCC67100C2CF92 /* b3.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD423DCC67100C2CF92 /* b3.png */; };
+		93908CDE23DCC67100C2CF92 /* speech.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD523DCC67100C2CF92 /* speech.png */; };
+		93908CDF23DCC67100C2CF92 /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD623DCC67100C2CF92 /* b2.png */; };
+		93908CE023DCC67100C2CF92 /* b1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93908CD723DCC67100C2CF92 /* b1.png */; };
+		93AE4B8D23DCF63E0038E4A1 /* AndaleMono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93AE4B8C23DCF63E0038E4A1 /* AndaleMono.ttf */; };
+		93AE4B8E23DDB6170038E4A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421970B223CDD0ED00AD6317 /* Main.storyboard */; };
 		93AF378C23D75CB500366B60 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AF378B23D75CB500366B60 /* Swift+Gif.swift */; };
 		93AF378E23D75EE600366B60 /* TamAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93AF378D23D75EE600366B60 /* TamAnimation.gif */; };
 		93C5E38623DC6FD400B865E1 /* You_died.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C5E38523DC6FD400B865E1 /* You_died.png */; };
@@ -56,6 +66,16 @@
 		421970CE23CDD0EF00AD6317 /* IOS_TamagotchiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_TamagotchiUITests.swift; sourceTree = "<group>"; };
 		421970D023CDD0EF00AD6317 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421970DC23CDD11F00AD6317 /* Tamagotchi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tamagotchi.swift; sourceTree = "<group>"; };
+		93908CCF23DCC67100C2CF92 /* content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = content.png; sourceTree = "<group>"; };
+		93908CD023DCC67100C2CF92 /* iPhone 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone 8.png"; sourceTree = "<group>"; };
+		93908CD123DCC67100C2CF92 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		93908CD223DCC67100C2CF92 /* b5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b5.png; sourceTree = "<group>"; };
+		93908CD323DCC67100C2CF92 /* b4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b4.png; sourceTree = "<group>"; };
+		93908CD423DCC67100C2CF92 /* b3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b3.png; sourceTree = "<group>"; };
+		93908CD523DCC67100C2CF92 /* speech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech.png; sourceTree = "<group>"; };
+		93908CD623DCC67100C2CF92 /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b2.png; sourceTree = "<group>"; };
+		93908CD723DCC67100C2CF92 /* b1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b1.png; sourceTree = "<group>"; };
+		93AE4B8C23DCF63E0038E4A1 /* AndaleMono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndaleMono.ttf; sourceTree = "<group>"; };
 		93AF378B23D75CB500366B60 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		93AF378D23D75EE600366B60 /* TamAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TamAnimation.gif; sourceTree = "<group>"; };
 		93C5E38523DC6FD400B865E1 /* You_died.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = You_died.png; sourceTree = "<group>"; };
@@ -111,8 +131,10 @@
 			isa = PBXGroup;
 			children = (
 				421970AC23CDD0ED00AD6317 /* AppDelegate.swift */,
+				93AE4B8C23DCF63E0038E4A1 /* AndaleMono.ttf */,
 				93AF378D23D75EE600366B60 /* TamAnimation.gif */,
 				93FA609923D9BC8600BB4784 /* TamPreEvolution.gif */,
+				93908CCE23DCC67000C2CF92 /* AARON APP */,
 				421970AE23CDD0ED00AD6317 /* SceneDelegate.swift */,
 				93C5E38523DC6FD400B865E1 /* You_died.png */,
 				421970B023CDD0ED00AD6317 /* ViewController.swift */,
@@ -142,6 +164,22 @@
 				421970D023CDD0EF00AD6317 /* Info.plist */,
 			);
 			path = IOS.TamagotchiUITests;
+			sourceTree = "<group>";
+		};
+		93908CCE23DCC67000C2CF92 /* AARON APP */ = {
+			isa = PBXGroup;
+			children = (
+				93908CCF23DCC67100C2CF92 /* content.png */,
+				93908CD023DCC67100C2CF92 /* iPhone 8.png */,
+				93908CD123DCC67100C2CF92 /* comment.png */,
+				93908CD223DCC67100C2CF92 /* b5.png */,
+				93908CD323DCC67100C2CF92 /* b4.png */,
+				93908CD423DCC67100C2CF92 /* b3.png */,
+				93908CD523DCC67100C2CF92 /* speech.png */,
+				93908CD623DCC67100C2CF92 /* b2.png */,
+				93908CD723DCC67100C2CF92 /* b1.png */,
+			);
+			path = "AARON APP";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,11 +286,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93908CDB23DCC67100C2CF92 /* b5.png in Resources */,
 				93C5E38623DC6FD400B865E1 /* You_died.png in Resources */,
 				421970B923CDD0EE00AD6317 /* LaunchScreen.storyboard in Resources */,
+				93908CD923DCC67100C2CF92 /* iPhone 8.png in Resources */,
+				93908CD823DCC67100C2CF92 /* content.png in Resources */,
+				93908CE023DCC67100C2CF92 /* b1.png in Resources */,
+				93908CDA23DCC67100C2CF92 /* comment.png in Resources */,
+				93908CDD23DCC67100C2CF92 /* b3.png in Resources */,
+				93AE4B8D23DCF63E0038E4A1 /* AndaleMono.ttf in Resources */,
 				421970B623CDD0EE00AD6317 /* Assets.xcassets in Resources */,
+				93908CDE23DCC67100C2CF92 /* speech.png in Resources */,
+				93AE4B8E23DDB6170038E4A1 /* Main.storyboard in Resources */,
+				93908CDF23DCC67100C2CF92 /* b2.png in Resources */,
 				93AF378E23D75EE600366B60 /* TamAnimation.gif in Resources */,
-				421970B423CDD0ED00AD6317 /* Main.storyboard in Resources */,
+				93908CDC23DCC67100C2CF92 /* b4.png in Resources */,
 				93FA609A23D9BC8600BB4784 /* TamPreEvolution.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

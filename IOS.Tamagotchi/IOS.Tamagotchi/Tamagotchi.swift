@@ -81,22 +81,18 @@ class Tamagotchi {
     
  
     
-    func displayStats() -> String{
+    func displayStatsBot() -> String{
         return """
+        Name: \(name),  Needs Attention: \(needAttention),
         
-        Name: \(name)
-        Age: \(age)
-        health: \(health)
-        Needs Attention: \(needAttention)
         Happiness-Level: \(happinessLevels[happinessRank])
-        Is Hungry: \(hungry)
-        Needs cleaning: \(clean)
-        Is sick: \(sick)
-        Weight: \(weight)
+        """
         
-        
-        
-
+    }
+    func displayStatsTop() -> String{
+        return """
+        Needs cleaning: \(clean),  Is sick: \(sick),
+        Weight: \(weight),  Is Hungry: \(hungry)
         """
         
     }
