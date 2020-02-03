@@ -20,94 +20,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="content.png" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-Vt-NZK">
-                                <rect key="frame" x="-31" y="211" width="477" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech.png" translatesAutoresizingMaskIntoConstraints="NO" id="jmu-PS-G8A">
                                 <rect key="frame" x="130" y="102" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1d-ev-bH5">
-                                <rect key="frame" x="102" y="641" width="96" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1d-ev-bH5">
+                                <rect key="frame" x="102" y="688" width="96" height="100"/>
                                 <state key="normal" image="b4.png"/>
                                 <connections>
                                     <action selector="feedTamagotchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQi-QS-IU6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMs-XF-cTI">
-                                <rect key="frame" x="274" y="533" width="96" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMs-XF-cTI">
+                                <rect key="frame" x="274" y="580" width="96" height="100"/>
                                 <state key="normal" image="b5.png"/>
                                 <connections>
                                     <action selector="exerciseTamagotchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VkN-sL-6PQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1x-iq-ndr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="speech" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1x-iq-ndr">
                                 <rect key="frame" x="163" y="129" width="174" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMg-9r-7oD">
-                                <rect key="frame" x="45" y="533" width="96" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMg-9r-7oD">
+                                <rect key="frame" x="45" y="580" width="96" height="100"/>
                                 <state key="normal" image="b2.png"/>
                                 <connections>
                                     <action selector="cleanTamagotchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpj-5u-fHj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDO-4H-wlN">
-                                <rect key="frame" x="40" y="65" width="23" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDO-4H-wlN">
+                                <rect key="frame" x="40" y="65" width="40" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.94248229269999995" green="0.1723171771" blue="0.91248458619999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovb-NG-kuG">
-                                <rect key="frame" x="217" y="641" width="96" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovb-NG-kuG">
+                                <rect key="frame" x="217" y="688" width="96" height="100"/>
                                 <state key="normal" image="b3.png"/>
                                 <connections>
                                     <action selector="medicineTamagotchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76V-tF-1gO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dM-OK-xkm">
-                                <rect key="frame" x="159" y="533" width="96" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dM-OK-xkm">
+                                <rect key="frame" x="159" y="580" width="96" height="100"/>
                                 <state key="normal" image="b1.png"/>
                                 <connections>
                                     <action selector="playGameTamagotchi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yoG-ik-1as"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamagotchi Stats2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dq-3o-dK0">
-                                <rect key="frame" x="-66" y="190" width="546" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamagotchi Stats" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-XH-RK6">
-                                <rect key="frame" x="-32" y="369" width="478" height="224"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="qEI-xZ-TT5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="qEI-xZ-TT5">
                                 <rect key="frame" x="52" y="148" width="70" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TamPreEvolution.gif" translatesAutoresizingMaskIntoConstraints="NO" id="XJh-Cz-Pj5">
                                 <rect key="frame" x="40" y="251" width="335" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamagotchi Stats" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DS1-XH-RK6">
+                                <rect key="frame" x="45" y="443" width="325" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tamagotchi Stats2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dq-3o-dK0">
+                                <rect key="frame" x="81" y="219" width="252" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AndaleMono" family="Andale Mono" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="content.png" translatesAutoresizingMaskIntoConstraints="NO" id="5jT-Vt-NZK">
+                                <rect key="frame" x="5" y="206" width="404" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99951606989999997" green="0.54225015639999996" blue="0.98110526799999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ovb-NG-kuG" firstAttribute="leading" secondItem="K1d-ev-bH5" secondAttribute="trailing" constant="19" id="11i-dW-TjF"/>
+                            <constraint firstItem="K1d-ev-bH5" firstAttribute="top" secondItem="7dM-OK-xkm" secondAttribute="bottom" constant="8" id="E30-Ys-6Hw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GMs-XF-cTI" secondAttribute="trailing" constant="44" id="GOI-np-cDM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ovb-NG-kuG" secondAttribute="bottom" constant="74" id="GlK-ms-4iv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K1d-ev-bH5" secondAttribute="bottom" constant="74" id="HOh-LT-CwD"/>
+                            <constraint firstItem="7dM-OK-xkm" firstAttribute="leading" secondItem="zMg-9r-7oD" secondAttribute="trailing" constant="18" id="UlI-Fh-HtW"/>
                             <constraint firstItem="aDO-4H-wlN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="XcL-DK-76P"/>
                             <constraint firstItem="aDO-4H-wlN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Yfx-U0-DQH"/>
+                            <constraint firstItem="7dM-OK-xkm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ay8-9S-gtU"/>
+                            <constraint firstItem="qEI-xZ-TT5" firstAttribute="top" secondItem="aDO-4H-wlN" secondAttribute="bottom" constant="62" id="eFM-qo-s85"/>
+                            <constraint firstItem="Ovb-NG-kuG" firstAttribute="top" secondItem="GMs-XF-cTI" secondAttribute="bottom" constant="8" id="hQR-aK-188"/>
+                            <constraint firstItem="K1d-ev-bH5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="j6U-b1-dK9"/>
+                            <constraint firstItem="zMg-9r-7oD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="l12-qC-O3j"/>
+                            <constraint firstItem="7dM-OK-xkm" firstAttribute="leading" secondItem="K1d-ev-bH5" secondAttribute="trailing" constant="-39" id="mVB-zh-hZY"/>
+                            <constraint firstItem="GMs-XF-cTI" firstAttribute="leading" secondItem="7dM-OK-xkm" secondAttribute="trailing" constant="19" id="psL-HE-gc9"/>
+                            <constraint firstItem="K1d-ev-bH5" firstAttribute="top" secondItem="zMg-9r-7oD" secondAttribute="bottom" constant="8" id="tcq-FQ-xXw"/>
+                            <constraint firstItem="Ovb-NG-kuG" firstAttribute="top" secondItem="GMs-XF-cTI" secondAttribute="bottom" constant="8" id="uCV-qD-FRU"/>
+                            <constraint firstItem="K1d-ev-bH5" firstAttribute="top" secondItem="zMg-9r-7oD" secondAttribute="bottom" constant="8" id="vmK-XM-EkY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ovb-NG-kuG" secondAttribute="trailing" constant="101" id="ziZ-fQ-Puh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

@@ -92,6 +92,7 @@ class Tamagotchi {
     func displayStatsTop() -> String{
         return """
         Needs cleaning: \(clean),  Is sick: \(sick),
+        
         Weight: \(weight),  Is Hungry: \(hungry)
         """
         
