@@ -19,12 +19,12 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         loadDummyData()
-        for division in divisions {
-            print("Code: \(division.code), No.: \(division.students.count)")
-            for student in division.students {
-                print("\(student.forename)")
-            }
-        }
+        //for division in divisions {
+            //print("Code: \(division.code), No.: \(division.students.count)")
+            //for student in division.students {
+                //print("\(student.forename)")
+            //}
+        //}
         
         updateDateDisplay()
 
@@ -53,14 +53,18 @@ class ViewController: UITableViewController {
         }
         
         let selectedDivision = divisions[indexPath.row]
-        let newAbsence = Absence(date: currentDate)
+       
+        if let existingAbsence = selectedDivision.getAbsence(date: currentDate) {
+            vc.absence = existingAbsence
+        } else {
+            let newAbsence = Absence(date: currentDate)
+            //newAbsence.absent.append(contentsOf: selectedDivision.students)
+            selectedDivision.absences.append(newAbsence)
+            vc.absence = newAbsence
+        }
         
         
-        selectedDivision.absences.append(newAbsence)
-        newAbsence.absent.append(contentsOf: selectedDivision.students)
-        vc.absence = newAbsence
-        
-        vc.division = divisions[indexPath.row]
+        vc.division = selectedDivision
         
         navigationController?.pushViewController(vc, animated: true)
     }
