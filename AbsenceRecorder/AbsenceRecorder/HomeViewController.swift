@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  AbsenceRecorder
 //
 //  Created by Aaron Rex on 29/01/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+class HomeViewController: UITableViewController {
     
     var divisions: [Division] = []
     var currentDate: Date = Date()
@@ -27,6 +27,7 @@ class ViewController: UITableViewController {
         //}
         
         updateDateDisplay()
+        tableView.reloadData()
 
     }
     
@@ -48,23 +49,24 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "DivisionAbsenceViewController") as? DivisionAbsenceViewController else {
-                fatalError("Failed to load Division Absence View Controller from Storyboard")
-        }
         
         let selectedDivision = divisions[indexPath.row]
+        var absence = Absence(date: currentDate )
        
         if let existingAbsence = selectedDivision.getAbsence(date: currentDate) {
-            vc.absence = existingAbsence
+            absence = existingAbsence
+
         } else {
-            let newAbsence = Absence(date: currentDate)
-            //newAbsence.absent.append(contentsOf: selectedDivision.students)
-            selectedDivision.absences.append(newAbsence)
-            vc.absence = newAbsence
+            
+            selectedDivision.absences.append(absence)
         }
         
+        guard let vc = storyboard?.instantiateViewController(identifier: "DivisionAbsenceViewController", creator: { coder in
+                   return DivisionAbsenceViewController(coder: coder, division: selectedDivision, absence: absence)
+               }) else {
+                   fatalError("Failed to load Division Absence View Controller from Storyboard")
+               }
         
-        vc.division = selectedDivision
         
         navigationController?.pushViewController(vc, animated: true)
     }
