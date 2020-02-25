@@ -14,7 +14,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    content = 
+    
 
+    @IBAction func Rank1(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func Rank2(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func Rank3(_ sender: Any) {
+        
+    }
+    
 
 }
 

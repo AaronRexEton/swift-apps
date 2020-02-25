@@ -12,10 +12,11 @@ class CommentCardGenerator {
     static func createCommentCard(student: Student, NoOfSubjects: Int) -> CommentCard {
         let commentCard = CommentCard()
         
-        for i in 0...1 {
-            let comment = Comment(subject: String, teacher: String, content: Content)
-            commentCard.comments.append(comment)
-        }
-        
+        //for i in 0...1 {
+            //let comment = Comment(subject: "Maths", teacher: "Mr. Bossman", content: content)
+            //commentCard.comments.append(comment)
+        //}
+        return commentCard
     }
+
 }

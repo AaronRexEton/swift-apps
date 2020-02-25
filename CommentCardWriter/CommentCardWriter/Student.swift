@@ -11,6 +11,14 @@ import Foundation
 class Student {
     var name: String
     var house: String
-    var houseMaster: String
-    var Tutor: String
+    var tutor: String
+
+    init(name: String, house: String, tutor: String) {
+        self.name = name
+        self.house = house
+        self.tutor = tutor
+    }
+
 }
+
+

@@ -13,6 +13,7 @@ class Comment {
     var maxChar: Int = 500
     var content: Content
     
+    
     init(subject: String, teacher: String, content: Content) {
         self.subject = subject
         self.content = content

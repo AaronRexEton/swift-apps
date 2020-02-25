@@ -10,6 +10,12 @@ import Foundation
 
 class CommentGenerator {
     
+    //What subject is this?
+    
+    //Who is your teacher?
+    
+    
+    
     
     
 }
