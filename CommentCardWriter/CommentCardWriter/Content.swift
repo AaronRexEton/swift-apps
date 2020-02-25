@@ -25,8 +25,8 @@ class Content {
         self.improvementRank = improvementRank
     }
     
-    func AddEnjoyment() {
-        contentTemp = self.content
+    func AddEnjoyment(rank: Int) {
+        var contentTemp = self.content
         
         
     }
