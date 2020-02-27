@@ -14,7 +14,7 @@ class Comment {
     var content: Content
     
     
-    init(subject: String, teacher: String, content: Content) {
+    init(subject: String, content: Content) {
         self.subject = subject
         self.content = content
     }

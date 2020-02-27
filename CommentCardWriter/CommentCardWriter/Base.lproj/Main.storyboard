@@ -68,10 +68,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9m-AK-HQP">
+                                <rect key="frame" x="28" y="438" width="343" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mk-4P-7oS">
+                                <rect key="frame" x="129" y="810" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Comment Card"/>
+                                <connections>
+                                    <action selector="submitCommentCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ADU-Wd-MRB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="x8v-zd-H5x" id="T79-6l-kzN"/>
+                        <outlet property="button2" destination="FJv-aF-3IU" id="g78-HL-COG"/>
+                        <outlet property="button3" destination="0nL-Pz-xm2" id="SXj-Sa-3yz"/>
+                        <outlet property="contentBox" destination="J9m-AK-HQP" id="VFQ-So-sbm"/>
+                        <outlet property="option1" destination="9Ig-Od-s9K" id="iw8-TO-d0a"/>
+                        <outlet property="option2" destination="mar-NX-bex" id="wAy-ND-tDS"/>
+                        <outlet property="option3" destination="QRH-R6-vdJ" id="BV9-mT-KOt"/>
+                        <outlet property="submitCommentButton" destination="8mk-4P-7oS" id="c0q-hn-6nU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
