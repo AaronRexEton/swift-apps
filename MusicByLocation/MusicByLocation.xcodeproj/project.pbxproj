@@ -15,6 +15,8 @@
 		93D22E1C2406FA44001A5453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D22E1A2406FA44001A5453 /* LaunchScreen.storyboard */; };
 		93D22E272406FA44001A5453 /* MusicByLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D22E262406FA44001A5453 /* MusicByLocationTests.swift */; };
 		93D22E322406FA44001A5453 /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D22E312406FA44001A5453 /* MusicByLocationUITests.swift */; };
+		93E44A77240DB2680051F80E /* ArtistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E44A76240DB2680051F80E /* ArtistResponse.swift */; };
+		93E44A79240DB7BB0051F80E /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E44A78240DB7BB0051F80E /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		93D22E2D2406FA44001A5453 /* MusicByLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicByLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D22E312406FA44001A5453 /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		93D22E332406FA44001A5453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E44A76240DB2680051F80E /* ArtistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistResponse.swift; sourceTree = "<group>"; };
+		93E44A78240DB7BB0051F80E /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				93D22E182406FA44001A5453 /* Assets.xcassets */,
 				93D22E1A2406FA44001A5453 /* LaunchScreen.storyboard */,
 				93D22E1D2406FA44001A5453 /* Info.plist */,
+				93E44A76240DB2680051F80E /* ArtistResponse.swift */,
+				93E44A78240DB7BB0051F80E /* Artist.swift */,
 			);
 			path = MusicByLocation;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D22E142406FA3F001A5453 /* ViewController.swift in Sources */,
+				93E44A77240DB2680051F80E /* ArtistResponse.swift in Sources */,
 				93D22E102406FA3F001A5453 /* AppDelegate.swift in Sources */,
+				93E44A79240DB7BB0051F80E /* Artist.swift in Sources */,
 				93D22E122406FA3F001A5453 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
