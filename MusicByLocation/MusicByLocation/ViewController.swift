@@ -21,7 +21,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.requestWhenInUseAuthorization()
-        locationManager.delegate = self
+        locationManager.delegate = locationManagerDelegate
+        locationManagerDelegate.vc = self
     }
     
     func updateDisplay(text: String?) {
@@ -39,11 +40,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             """
     }
 
-
-    @IBAction func findName(_ sender: Any) {
-        locationManager.requestLocation()
-        
-    }
     
     func updateArtistsByLocation(text: String?) {
         iTunesAdaptor.getArtists(search: text) { (artists) in
@@ -52,6 +48,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    @IBAction func findMusic(_ sender: Any) {
+        locationManager.requestLocation()
+    }
     
     
     
