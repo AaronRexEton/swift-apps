@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //button navigation bar.push
+    //if let vc =
+    //identifier
+    
 
     @IBOutlet var contentBox: UILabel!
     
@@ -23,16 +28,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let ac
         updateQuestions()
+        
         // Do any additional setup after loading the view.
     }
     
     var commentCard = CommentCard()
-    var content = Content(subject: "Computer Science")
+    var content = Content(subject: "")
     
    
-
+    @IBAction func backToCommentCard(_ sender: Any) {
+         guard let vc = storyboard?.instantiateViewController(identifier: "HomeCommentCardController", creator: { coder in
+            return Home(coder: coder, commentCard: self.commentCard)
+                      }) else {
+                          fatalError("Failed to load Comment Card from Storyboard")
+                      }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 
     @IBAction func Rank1(_ sender: Any) {
         if content.questionCycle == 1 {
@@ -75,10 +88,14 @@ class ViewController: UIViewController {
     @IBAction func submitCommentCard(_ sender: Any) {
         let comment = Comment(subject: content.subject, content: content)
         commentCard.comments.append(comment)
-        content = Content(subject: "Maths")
+        
+    }
+    
+    @IBAction func createComment(_ sender: Any) {
+        addSubject()
         content.questionCycle = 1
         updateQuestions()
-        
+
     }
     
     func updateQuestions() {
@@ -118,6 +135,19 @@ class ViewController: UIViewController {
         }
     }
     
+    func addSubject() {
+        let ac = UIAlertController(title: "What subject is this?", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        
+        let insertAction = UIAlertAction(title: "Add",style: .default) { [unowned ac] _ in
+            if let subjectToAdd = ac.textFields![0].text {
+                self.content = Content(subject: subjectToAdd)
+            }
+        }
+        ac.addAction(insertAction)
+        present(ac, animated: true)
+        updateQuestions()
+    }
 
 }
 

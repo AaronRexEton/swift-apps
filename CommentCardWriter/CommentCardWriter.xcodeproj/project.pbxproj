@@ -22,6 +22,7 @@
 		429886DB23F2BDB1004072F8 /* CommentCardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429886DA23F2BDB1004072F8 /* CommentCardGenerator.swift */; };
 		429886DD23F2C379004072F8 /* CommentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429886DC23F2C379004072F8 /* CommentGenerator.swift */; };
 		429886DF23F2C3FA004072F8 /* ContentGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429886DE23F2C3FA004072F8 /* ContentGenerator.swift */; };
+		42E85E8F240E6A9700D3CCA4 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E85E8E240E6A9700D3CCA4 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		429886DA23F2BDB1004072F8 /* CommentCardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardGenerator.swift; sourceTree = "<group>"; };
 		429886DC23F2C379004072F8 /* CommentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentGenerator.swift; sourceTree = "<group>"; };
 		429886DE23F2C3FA004072F8 /* ContentGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGenerator.swift; sourceTree = "<group>"; };
+		42E85E8E240E6A9700D3CCA4 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				429886DA23F2BDB1004072F8 /* CommentCardGenerator.swift */,
 				429886DC23F2C379004072F8 /* CommentGenerator.swift */,
 				429886DE23F2C3FA004072F8 /* ContentGenerator.swift */,
+				42E85E8E240E6A9700D3CCA4 /* Home.swift */,
 			);
 			path = CommentCardWriter;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				429886D523F2B4BD004072F8 /* Comment.swift in Sources */,
 				429886DB23F2BDB1004072F8 /* CommentCardGenerator.swift in Sources */,
 				429886A723F2B41C004072F8 /* ViewController.swift in Sources */,
+				42E85E8F240E6A9700D3CCA4 /* Home.swift in Sources */,
 				429886D323F2B471004072F8 /* CommentCard.swift in Sources */,
 				429886A323F2B41C004072F8 /* AppDelegate.swift in Sources */,
 				429886A523F2B41C004072F8 /* SceneDelegate.swift in Sources */,
