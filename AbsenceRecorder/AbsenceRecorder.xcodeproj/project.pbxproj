@@ -19,6 +19,26 @@
 		9332347323E7281A00E6779C /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347223E7281A00E6779C /* Division.swift */; };
 		9332347523E7297D00E6779C /* DivisonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347423E7297D00E6779C /* DivisonFactory.swift */; };
 		9332347923E743D700E6779C /* DivisionAbsenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347823E743D700E6779C /* DivisionAbsenceViewController.swift */; };
+		938900D3241706090010CAB4 /* DivisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938900D2241706090010CAB4 /* DivisionTests.swift */; };
+		938900D42417066F0010CAB4 /* DivisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBAB7B23F2016700A64E43 /* DivisionCell.swift */; };
+		938900D5241706740010CAB4 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0323EC982300CE4F59 /* Absence.swift */; };
+		938900D6241706770010CAB4 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0123EC965A00CE4F59 /* StudentCell.swift */; };
+		938900D72417067B0010CAB4 /* DivisionAbsenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347823E743D700E6779C /* DivisionAbsenceViewController.swift */; };
+		938900D82417067D0010CAB4 /* DivisonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347423E7297D00E6779C /* DivisonFactory.swift */; };
+		938900D9241706810010CAB4 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347223E7281A00E6779C /* Division.swift */; };
+		938900DA241706830010CAB4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347023E7277D00E6779C /* Student.swift */; };
+		938900DB241706860010CAB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332344423E251E100E6779C /* HomeViewController.swift */; };
+		938900DC241708480010CAB4 /* DivisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBAB7B23F2016700A64E43 /* DivisionCell.swift */; };
+		938900DD2417084A0010CAB4 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0323EC982300CE4F59 /* Absence.swift */; };
+		938900DE2417084C0010CAB4 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0123EC965A00CE4F59 /* StudentCell.swift */; };
+		938900DF2417084E0010CAB4 /* DivisionAbsenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347823E743D700E6779C /* DivisionAbsenceViewController.swift */; };
+		938900E0241708500010CAB4 /* DivisonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347423E7297D00E6779C /* DivisonFactory.swift */; };
+		938900E1241708520010CAB4 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347223E7281A00E6779C /* Division.swift */; };
+		938900E2241708560010CAB4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332347023E7277D00E6779C /* Student.swift */; };
+		938900E32417085E0010CAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332344623E251E100E6779C /* Main.storyboard */; };
+		938900E42417085F0010CAB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9332344623E251E100E6779C /* Main.storyboard */; };
+		938900E5241708620010CAB4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9332344423E251E100E6779C /* HomeViewController.swift */; };
+		938900E724170D200010CAB4 /* UserDocumentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938900E624170D200010CAB4 /* UserDocumentManager.swift */; };
 		939A6C0223EC965A00CE4F59 /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0123EC965A00CE4F59 /* StudentCell.swift */; };
 		939A6C0423EC982300CE4F59 /* Absence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939A6C0323EC982300CE4F59 /* Absence.swift */; };
 		93CBAB7C23F2016700A64E43 /* DivisionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBAB7B23F2016700A64E43 /* DivisionCell.swift */; };
@@ -60,6 +80,8 @@
 		9332347223E7281A00E6779C /* Division.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
 		9332347423E7297D00E6779C /* DivisonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisonFactory.swift; sourceTree = "<group>"; };
 		9332347823E743D700E6779C /* DivisionAbsenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionAbsenceViewController.swift; sourceTree = "<group>"; };
+		938900D2241706090010CAB4 /* DivisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionTests.swift; sourceTree = "<group>"; };
+		938900E624170D200010CAB4 /* UserDocumentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDocumentManager.swift; sourceTree = "<group>"; };
 		939A6C0123EC965A00CE4F59 /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		939A6C0323EC982300CE4F59 /* Absence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absence.swift; sourceTree = "<group>"; };
 		93CBAB7B23F2016700A64E43 /* DivisionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionCell.swift; sourceTree = "<group>"; };
@@ -127,6 +149,7 @@
 				939A6C0123EC965A00CE4F59 /* StudentCell.swift */,
 				939A6C0323EC982300CE4F59 /* Absence.swift */,
 				93CBAB7B23F2016700A64E43 /* DivisionCell.swift */,
+				938900E624170D200010CAB4 /* UserDocumentManager.swift */,
 			);
 			path = AbsenceRecorder;
 			sourceTree = "<group>";
@@ -136,6 +159,7 @@
 			children = (
 				9332345723E251E700E6779C /* AbsenceRecorderTests.swift */,
 				9332345923E251E700E6779C /* Info.plist */,
+				938900D2241706090010CAB4 /* DivisionTests.swift */,
 			);
 			path = AbsenceRecorderTests;
 			sourceTree = "<group>";
@@ -263,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938900E32417085E0010CAB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938900E42417085F0010CAB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +313,7 @@
 				939A6C0223EC965A00CE4F59 /* StudentCell.swift in Sources */,
 				9332347323E7281A00E6779C /* Division.swift in Sources */,
 				9332347523E7297D00E6779C /* DivisonFactory.swift in Sources */,
+				938900E724170D200010CAB4 /* UserDocumentManager.swift in Sources */,
 				9332344323E251E100E6779C /* SceneDelegate.swift in Sources */,
 				93CBAB7C23F2016700A64E43 /* DivisionCell.swift in Sources */,
 				9332347123E7277D00E6779C /* Student.swift in Sources */,
@@ -297,6 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938900D82417067D0010CAB4 /* DivisonFactory.swift in Sources */,
+				938900D6241706770010CAB4 /* StudentCell.swift in Sources */,
+				938900D72417067B0010CAB4 /* DivisionAbsenceViewController.swift in Sources */,
+				938900D42417066F0010CAB4 /* DivisionCell.swift in Sources */,
+				938900DA241706830010CAB4 /* Student.swift in Sources */,
+				938900DB241706860010CAB4 /* HomeViewController.swift in Sources */,
+				938900D5241706740010CAB4 /* Absence.swift in Sources */,
+				938900D3241706090010CAB4 /* DivisionTests.swift in Sources */,
+				938900D9241706810010CAB4 /* Division.swift in Sources */,
 				9332345823E251E700E6779C /* AbsenceRecorderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938900DF2417084E0010CAB4 /* DivisionAbsenceViewController.swift in Sources */,
+				938900DD2417084A0010CAB4 /* Absence.swift in Sources */,
+				938900E1241708520010CAB4 /* Division.swift in Sources */,
+				938900DC241708480010CAB4 /* DivisionCell.swift in Sources */,
+				938900E0241708500010CAB4 /* DivisonFactory.swift in Sources */,
+				938900E5241708620010CAB4 /* HomeViewController.swift in Sources */,
 				9332346323E251E700E6779C /* AbsenceRecorderUITests.swift in Sources */,
+				938900DE2417084C0010CAB4 /* StudentCell.swift in Sources */,
+				938900E2241708560010CAB4 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
